@@ -12,14 +12,18 @@ app.layout = html.Div([
     cyto.Cytoscape(
         id='cytoscape',
         elements=[
-            {'data': {'id': 'ca', 'label': 'Canada'}},
-            {'data': {'id': 'on', 'label': 'Ontario'}},
-            {'data': {'id': 'qc', 'label': 'Quebec'}},
-            {'data': {'source': 'ca', 'target': 'on'}},
-            {'data': {'source': 'ca', 'target': 'qc'}}
+            {'data': {'id': '1', 'label': 'GTTCCGGACCAGCGTCCGAAA'}},
+{'data': {'id': '2', 'label': 'GTTCCGAACCAGCGTCCGAAA'}},
+{'data': {'id': '3', 'label': 'GTTCCGGACCAGCGTCCGAAT'}},
+{'data': {'id': '4', 'label': 'ATTCCGGACCAGCGTCCGAAA'}},
+{'data': {'id': '5', 'label': 'GTTCCGGACCAGTGTCCGAAA'}},
+{'data': {'source': '1', 'target': '2'}},
+{'data': {'source': '1', 'target': '3'}},
+{'data': {'source': '1', 'target': '4'}},
+{'data': {'source': '1', 'target': '5'}}
         ],
         layout={'name': 'breadthfirst'},
-        style={'width': '400px', 'height': '500px'}
+        style={'width': '1000px', 'height': '1000px'}
     )
 ])
 
